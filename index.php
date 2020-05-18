@@ -10,10 +10,10 @@ if($loggedIn == 'true'){
     header('Location: localhost/login.php');
     die();
 }
-$servername = "localhost";
-$username = "quotesca_test2";
-$password = "test";
-$dbname = "quotesca_test1";
+$servername = "***";
+$username = "***";
+$password = "***";
+$dbname = "**";
 $conn = new mysqli($servername, $username, $password,$dbname);
 if ($conn->connect_error){
     die("Connection failed: " . $conn->connect_error);
