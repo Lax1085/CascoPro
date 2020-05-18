@@ -7,7 +7,7 @@ $isLeader = $_SESSION['isLeader'];
 $isCasco = $_SESSION['isCasco'];
 if($loggedIn == 'true'){
 }else{
-    header('Location: http://quotes.cascoonline.com/login.php');
+    header('Location: localhost/login.php');
     die();
 }
 $servername = "localhost";
@@ -17897,7 +17897,7 @@ $('#glassOrderConfirm').click(function(){
             success:function(data){                      
               $('#testLoadModal').modal('hide')
               alert(data);                    
-              window.location.replace('http://quotes.cascoonline.com/');
+              window.location.replace('localhost');
             },
             error: function(jqXHR, textStatus, errorThrown) {
               alert("Unable to send Email");
