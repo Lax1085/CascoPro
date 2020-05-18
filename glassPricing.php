@@ -6,9 +6,9 @@ if($loggedIn == 'true'){
     die();    
 }
 $servername = "localhost";
-$username = "quotesca_test2";
-$password = "test";
-$dbname = "quotesca_test1"; 
+$username = "***";
+$password = "**";
+$dbname = "**"; 
 // Create connection
 $conn = new mysqli($servername, $username, $password,$dbname);
 $p = mysqli_real_escape_string($conn,$_GET['p']);
