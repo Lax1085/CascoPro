@@ -18,13 +18,13 @@ if($loggedIn == 'true'){
 
 }
 
-$servername = "localhost";
+$servername = "***";
 
-$username = "quotesca_test2";
+$username = "****";
 
-$password = "test";
+$password = "***";
 
-$dbname = "quotesca_test1";
+$dbname = "***";
 
 $conn = new mysqli($servername, $username, $password,$dbname);
 
