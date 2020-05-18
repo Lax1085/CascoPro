@@ -6,13 +6,13 @@ $isLeader = $_SESSION['isLeader'];
 $isCasco = $_SESSION['isCasco'];
 if($loggedIn == 'true'){
 }else{
-    header('Location: http://quotes.cascoonline.com/login.php');
+    header('Location: localhost/login.php');
     die();
 }
 $servername = "localhost";
-$username = "quotesca_test2";
-$password = "test";
-$dbname = "quotesca_test1";
+$username = "****";
+$password = "**";
+$dbname = "***";
 $conn = new mysqli($servername, $username, $password,$dbname);
 if ($conn->connect_error){
     die("Connection failed: " . $conn->connect_error);
@@ -79,7 +79,6 @@ if(isset($_SESSION['test'])){
         $result = $conn->query($sql);
         if ($result->num_rows > 0){
           while($row = $result->fetch_assoc()){
-            //if($row['CUS_NAME'] != "TONY GENTILE" && $row['CUS_CUSTNO'] != "26487"){
               echo "<option value =".$row['CUS_CUSTNO'].">".ucwords(strtolower($row['CUS_NAME']))."</option>";
             //}  
           }
