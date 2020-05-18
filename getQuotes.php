@@ -8,9 +8,9 @@ if($loggedIn == 'true'){
     
 }
 $servername = "localhost";
-$username = "quotesca_test2";
-$password = "test";
-$dbname = "quotesca_test1"; 
+$username = "****";
+$password = "***";
+$dbname = "****"; 
 $prod ="";
 $conn = new mysqli($servername, $username, $password,$dbname);
 if ($conn->connect_error) {
