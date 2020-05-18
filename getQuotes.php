@@ -3,7 +3,7 @@ $loggedIn = $_SESSION['loggedOn'];
 $custId = $_SESSION['currCompany'];
 if($loggedIn == 'true'){
 }else{
-    header('Location: http://quotes.cascoonline.com/login.php');
+    header('Location: localhost/login.php');
     die();
     
 }
