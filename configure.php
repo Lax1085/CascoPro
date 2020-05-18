@@ -11,9 +11,9 @@ if($loggedIn == 'true'){
     die();
 }
 $servername = "localhost";
-$username = "quotesca_test2";
-$password = "test";
-$dbname = "quotesca_test1";
+$username = "*****";
+$password = "****";
+$dbname = "******";
 $conn = new mysqli($servername, $username, $password,$dbname);
 if ($conn->connect_error){
     die("Connection failed: " . $conn->connect_error);
@@ -8022,7 +8022,7 @@ if(isset($_SESSION['test'])){
  </div> 
 </div>
 <div class="footer navbar-fixed-bottom" id="contactFooter" style="margin-bottom: 35px; margin-left:25px;width:50%;display: none"> 
-    <a title="email the developer" href = "mailto:tgentile@custom-aluminum.com?cc=kbrown@cascoonline.com"><button id="contactButton" class = "btn btn-primary">Report Bug or Give Feedback</button></a>
+    <a title="email the developer" href = "mailto:alopez@custom-aluminum.com"><button id="contactButton" class = "btn btn-primary">Report Bug or Give Feedback</button></a>
   </div>
 <script type="text/javascript" src="/jsPDF-master/jsPDF-master/dist/jspdf.debug.js"></script>
 <script type="text/javascript" src="/jsPDF-master/jsPDF-master/plugins/from_html.js"></script>
