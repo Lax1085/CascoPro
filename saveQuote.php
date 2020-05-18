@@ -16,11 +16,11 @@ if($loggedIn == 'true'){
 
 $servername = "localhost";
 
-$username = "quotesca_test2";
+$username = "****";
 
-$password = "test";
+$password = "***";
 
-$dbname = "quotesca_test1"; 
+$dbname = "****"; 
 
 $conn = new mysqli($servername, $username, $password,$dbname);
 
@@ -121,30 +121,6 @@ $sv = mysqli_real_escape_string($conn,$_POST['sv']);
 $product = mysqli_real_escape_string($conn, $_POST['product']);
 
 
-
-/*$sql = "DELETE FROM saved_quotes WHERE job_number ='".$jn."'";
-
-$result = $conn->query($sql);
-
-if ($conn->query($sql) === TRUE) {
-
-    echo "New record created successfully";
-
-} else {
-
-    echo "Error: " . $sql . "<br>" . $conn->error;
-
-}
-
-
-
-$sql = "SELECT job_number FROM saved_quotes ORDER BY id DESC LIMIT 1";
-
-$result = $conn->query($sql);
-
-$row = mysqli_fetch_row($result);
-
-*/
 $qn=$jn;
 $ji=$qn;
 $ji=$qn;
