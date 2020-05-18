@@ -7,7 +7,7 @@ $isLeader = $_SESSION['isLeader'];
 $isCasco = $_SESSION['isCasco'];
 if($loggedIn == 'true'){
 }else{
-    header('Location: http://quotes.cascoonline.com/login.php');
+    header('Location: localhost/login.php');
     die();
 }
 $servername = "localhost";
